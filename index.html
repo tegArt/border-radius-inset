@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Border-radius inset for images</title>
+
+    <style>
+		body { padding-top: 40px; background:url(stripe.png) center top repeat; text-align:center;}
+		.block { padding:20px; text-align:center;}
+		canvas { max-width:100%;}
+		p { padding:0; margin:0; line-height:24px; color:#fff; background:#00719e;}
+    </style>
+
+</head>
+
+<body>
+
+	<p>minimum/default</p>
+	<div class="block block-1">
+		<img src="img.png"/>
+	</div>
+	
+	<p>radius: [30], width: 10, color: "#00719e"</p>
+	<div class="block block-2">
+		<img src="img.png"/>
+	</div>
+
+	<p>radius: [30,60], width: 10, color: "#00719e"</p>
+	<div class="block block-3">
+		<img src="img.png"/>
+	</div>
+
+	<p>radius: [30,60,25], width: 10, color: "#00719e"</p>
+	<div class="block block-4">
+		<img src="img.png"/>
+	</div>
+
+	<p>radius: [30,60,0,20], width: 10, color: "#00719e"</p>
+	<div class="block block-5">
+		<img src="img.png"/>
+	</div>
+
+    <script src="jquery-2.1.4.min.js"></script>
+	<script src="jquery.borderradiusinset.min.js"></script>
+	
+	<script type="text/javascript">
+		$(window).load(function(){
+		
+			$(".block-1 img").borderRadiusInset();
+			
+			$(".block-2 img").borderRadiusInset({
+				radius: [30],
+				width: 10,
+				color: "#00719e"
+			});
+				
+			$(".block-3 img").borderRadiusInset({
+				radius: [30,60],
+				width: 10,
+				color: "#00719e"
+			});
+				
+			$(".block-4 img").borderRadiusInset({
+				radius: [30,60,25],
+				width: 10,
+				color: "#00719e"
+			});
+				
+			$(".block-5 img").borderRadiusInset({
+				radius: [30,60,0,20],
+				width: 10,
+				color: "#00719e"
+			});
+				
+		});
+	</script>
+
+</body>
+</html>
