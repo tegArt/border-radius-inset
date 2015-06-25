@@ -40,20 +40,21 @@
 					radiusBottomRight = Math.abs(options.radius[2]);
 					radiusBottomleft = Math.abs(options.radius[3]);
 			}
-		
-			var imageWidth = $(this).width();
-			var imageHeight = $(this).height();
+			
+			var $sourceImage = $(this);
+			var imageWidth = $sourceImage.width();
+			var imageHeight = $sourceImage.height();
 			
 			var canvas = document.createElement("canvas");
 			canvas.width = imageWidth;
 			canvas.height = imageHeight;
 			
 			var ctx = canvas.getContext("2d");
-			$(this).before(canvas);
-			$(this).css("display","none");
+			$sourceImage.before(canvas);
+			$sourceImage.css("display","none");
 			
 			var img = new Image();
-			img.src = $(this).attr("src");
+			img.src = $sourceImage.attr("src");
 
 			img.onload = function () {
 			
