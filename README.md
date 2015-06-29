@@ -1,6 +1,6 @@
 # Border Radius Inset
 
-It's a simple jQuery plugin, to create a inset border radius. 
+It's a simple jQuery plugin, to create a inset border radius for images. 
 
 <img src="https://habrastorage.org/files/f68/a63/33e/f68a6333e77f437fbed0fccc8bef20b0.png" />
 
