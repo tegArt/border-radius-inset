@@ -6,16 +6,16 @@ It's a simple jQuery plugin, to create a inset border radius.
 
 ## Demo
 
-<a href="http://jsfiddle.net/53vq5pn1/">Demo</a>
+You can find working demo on <a href="http://jsfiddle.net/53vq5pn1/">jsFiddle</a>
 
 ## Usage
-
+```javascript
 $(".block-4 img").borderRadiusInset({
     radius: [30,60,0,20],
     width: 10,
     color: "#00719e"
 });
-
+```
 ## License
 
 The MIT License (MIT)
