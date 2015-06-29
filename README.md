@@ -6,7 +6,7 @@ It's a simple jQuery plugin, to create a inset border radius.
 
 ## Demo
 
-You can find working demo on <a href="http://jsfiddle.net/53vq5pn1/">jsFiddle</a>
+You can find working demo on <a href="http://jsfiddle.net/53vq5pn1/">jsFiddle</a>.
 
 ## Usage
 ```javascript
